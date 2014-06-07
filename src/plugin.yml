@@ -6,7 +6,6 @@ website: http://github.com/drXor
 description: >
     Implementation of SethBling's Skygrid map
     in Spigot-API
-depend: [MayhemLib, ClaimIt]
 loadbefore: [SimpleWorlds]
 commands:
   xortp:
