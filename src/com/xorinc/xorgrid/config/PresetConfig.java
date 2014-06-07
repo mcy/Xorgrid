@@ -17,7 +17,7 @@ import org.bukkit.inventory.ItemStack;
 import org.bukkit.plugin.java.JavaPlugin;
 import org.bukkit.util.Vector;
 
-import com.octagami.claimit.util.LoadItemUtil;
+//import com.octagami.claimit.util.LoadItemUtil;
 import com.xorinc.xorgrid.Xorgrid;
 import com.xorinc.xorgrid.generator.GridGenerator;
 import com.xorinc.xorgrid.generator.Preset;
@@ -141,7 +141,7 @@ public class PresetConfig {
         				
         				MemoryConfiguration item = new MemoryConfiguration();
         				item.addDefaults((Map<String, Object>) map.get("item"));
-        				itemMap.put(LoadItemUtil.loadRewardItem(item), distr);
+        				itemMap.put(new ItemStack(Material.GOLDEN_CARROT), distr);
         			}
         			
         			loot.put(container, itemMap);

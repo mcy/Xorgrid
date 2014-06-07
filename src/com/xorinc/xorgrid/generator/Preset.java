@@ -1,6 +1,6 @@
 package com.xorinc.xorgrid.generator;
 
-import static com.octagami.mayhemlib.misc.Range.range;
+import static com.xorinc.xorgrid.Range.*; //com.octagami.mayhemlib.misc.Range.range;
 import static org.bukkit.Material.*;
 
 import java.util.ArrayList;
@@ -18,7 +18,7 @@ import org.bukkit.entity.EntityType;
 import org.bukkit.inventory.ItemStack;
 import org.bukkit.util.Vector;
 
-import com.octagami.mayhemlib.number.NumberUtil;
+//import com.octagami.mayhemlib.number.NumberUtil;
 
 
 public class Preset {
@@ -82,7 +82,7 @@ public class Preset {
 					}
 				}
 				
-				data.put(m, NumberUtil.toByteArray(bytes));
+				data.put(m, toByteArray(bytes));
 			}
 		
 		}
@@ -154,5 +154,15 @@ public class Preset {
 		this.spawnerTypes = listE.toArray(new EntityType[listE.size()]);
 		
 		this.endPortal = endPortal.clone();
+	}
+	
+	public static byte[] toByteArray(List<Byte> list) {
+		
+		byte[] result = new byte[list.size()];
+		
+		for(int i : range(0, result.length))
+			result[i] = list.get(i);
+		
+		return result;
 	}
 }

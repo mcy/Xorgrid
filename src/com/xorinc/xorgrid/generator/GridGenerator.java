@@ -1,6 +1,6 @@
 package com.xorinc.xorgrid.generator;
 
-import static com.octagami.mayhemlib.misc.Range.range;
+import static com.xorinc.xorgrid.Range.*; //com.octagami.mayhemlib.misc.Range.range;
 import static org.bukkit.Material.*;
 
 import java.util.Collections;
@@ -25,7 +25,7 @@ import org.bukkit.inventory.InventoryHolder;
 import org.bukkit.inventory.ItemStack;
 import org.bukkit.util.Vector;
 
-import com.octagami.mayhemlib.string.StringUtil;
+//import com.octagami.mayhemlib.string.StringUtil;
 import com.xorinc.xorgrid.generator.Preset.LootContainer;
 
 
