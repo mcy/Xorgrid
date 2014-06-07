@@ -1,0 +1,21 @@
+name: Xorgrid
+main: com.xorinc.xorgrid.Xorgrid
+version: 1.0.0
+author: drXor
+website: http://github.com/drXor
+description: >
+    Implementation of SethBling's Skygrid map
+    in Spigot-API
+depend: [MayhemLib, ClaimIt]
+loadbefore: [SimpleWorlds]
+commands:
+  xortp:
+    description: Xortp
+    aliases: []
+    permission: simpleworlds.admin
+    usage: /<command>
+permissions:
+  xorgrid.teleport:
+      description: Xortp
+      default: op
+  
